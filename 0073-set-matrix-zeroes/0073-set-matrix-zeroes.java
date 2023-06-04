@@ -1,5 +1,8 @@
-class Solution {
-    public void setZeroes(int[][] matrix) {
+import java.io.*;
+import java.util.* ;
+
+public class Solution {
+    public static void setZeros(int matrix[][]) {
         int r=matrix.length;
         int c=matrix[0].length;
         
