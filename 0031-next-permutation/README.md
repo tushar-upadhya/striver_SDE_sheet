@@ -43,3 +43,20 @@
 	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
 </div>
+
+-------------------------------------------------------------------------------------------
+
+- Start from the right side of the array and find the first pair of adjacent elements where the element on the left is smaller than the element on the right. Let's call the index of the left element as i.
+- If i is greater than or equal to 0, it means there exists a next permutation.
+- Find the rightmost element greater than nums[i] starting from the right side of the array. Let's call the index of this element as j.
+- Swap the elements at indices i and j.
+- Reverse the subarray starting from index i+1 till the end of the array. This step is required to ensure that the next permutation is the smallest possible permutation after swapping the elements.
+- If i is less than 0, it means the array is already in descending order, and there is no next permutation possible. In this case, simply reverse the entire array to get the smallest possible permutation.
+-
+
+# time complexity of this approach is O(n), where n is the length of the input array nums. 
+#  space complexity is O(1) since it uses only a constant amount of extra space.
+
+
+
+
