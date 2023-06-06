@@ -24,3 +24,18 @@
 	<li><code>-1000 &lt;= matrix[i][j] &lt;= 1000</code></li>
 </ul>
 </div>
+
+
+
+
+
+# Approach
+* Iterate through each row of the matrix.
+* For each row, iterate through the elements starting from the diagonal element (j = i).
+* Swap the element at index (i, j) with the element at index (j, i), effectively transposing the matrix.
+* After transposing, iterate through each row again.
+* For each row, swap the elements symmetrically across the vertical middle column by swapping the element at index (i, j) with the element at index (i, matrix.length - 1 - j).
+* The resulting matrix will be the original matrix rotated clockwise by 90 degrees.
+
+#  time complexity of this approach is O(n^2), where n is the size of the square matrix. This is because we iterate through all the elements of the matrix twice.
+#  space complexity of this approach is O(1) since it uses only a constant amount of extra space.
