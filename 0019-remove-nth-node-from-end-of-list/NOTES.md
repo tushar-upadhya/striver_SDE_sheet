@@ -12,4 +12,4 @@
 #  time complexity  is O(L), where L is the length of the linked list.
 #  space complexity is O(1) 
 
-https://www.youtube.com/watch?time_continue=412&v=Lhu3MsXZy-Q&embeds_referring_euri=https%3A%2F%2Ftakeuforward.org%2Finterviews%2Fstrivers-sde-sheet-top-coding-interview-problems%2F&source_ve_path=MjM4NTE&feature=emb_title
+https://www.youtube.com/watch?v=Lhu3MsXZy-Q&t=412s
