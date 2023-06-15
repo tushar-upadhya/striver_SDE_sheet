@@ -1,4 +1,4 @@
-* Create a 2D grid with dimensions m rows and n columns to store the number of unique paths.
+* Create a 2D grid with dimensions of m rows and n columns to store the number of unique paths.
 * Initialize the values of the first row and first column of the grid to 1 because there is only one possible path to reach any cell in the first row or column (by moving only right or down).
 * Iterate through the remaining cells of the grid in row-major order (top to bottom, left to right).
 * For each cell, calculate the number of unique paths to reach that cell by summing the number of paths from the cell above **(grid[i-1][j])** and the cell to the left **(grid[i][j-1])**.
