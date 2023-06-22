@@ -4,12 +4,9 @@ class Solution {
         int maxCount = 0;
         
         for (int num : nums) {
-            if (num == 1) {
-                count++;
-                maxCount = Math.max(maxCount, count);
-            } else {
-                count = 0;
-            }
+            count = (count + num) * num; 
+            
+            maxCount = Math.max(maxCount, count);
         }
         
         return maxCount;
